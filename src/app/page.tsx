@@ -203,14 +203,19 @@ export default function Home() {
                     <p className="italic text-right">April 2025</p>
                   </div>
                   <ul className="list-disc ml-4 sm:ml-6 text-xs sm:text-sm">
-                    <li>GPA: 3.92 / 4.0</li>
                     <li>
-                      Coursework: Data Structures and Algorithms, Computer
-                      Architecture, Embedded Systems, Signals and Systems
+                      <span className="font-bold">GPA:</span> 3.92 / 4.0
+                    </li>
+                    <li>
+                      <span className="font-bold">Coursework:</span> Computer
+                      Architecture, Embedded Systems, Data Structures and
+                      Algorithms, Digital Circuits, Wireless Systems, Signals
+                      and Systems, CS Pragmatics, Discrete Math, Calculus I-IV,
+                      Linear Algebra, Probability
                     </li>
                   </ul>
                 </div>
-                <div className="mt-2">
+                {/* <div className="mt-2">
                   <div className="flex flex-row justify-between w-full items-baseline">
                     <h4 className="text-sm sm:text-base leading-5 font-bold">
                       CEA CAPA
@@ -231,27 +236,7 @@ export default function Home() {
                       and Present
                     </li>
                   </ul>
-                </div>
-              </div>
-              <div id="resume-skills" className="mt-2">
-                <h3 className="text-base sm:text-lg font-bold underline">
-                  Skills
-                </h3>
-                <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
-                  <li>
-                    <span className="font-bold">Languages:</span> C, C++,
-                    &#123;Java/Type&#125;Script, Java, HTML, CSS, Python, SQL,
-                    Verilog, Bash, HCL, Lua, Rego
-                  </li>
-                  <li>
-                    <span className="font-bold">Web Technologies:</span> React,
-                    Next.js, Express, Node.js, MongoDB
-                  </li>
-                  <li>
-                    <span className="font-bold">Technical/Tools:</span> Git, AWS
-                    (SDK, S3, and EC2), Docker, Terraform
-                  </li>
-                </ul>
+                </div> */}
               </div>
               <div id="resume-experience" className="mt-2">
                 <h3 className="text-base sm:text-lg font-bold underline">
@@ -269,7 +254,7 @@ export default function Home() {
                   <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                     <p className="italic">Embedded Software Member</p>
                     <p className="text-right">
-                      Sept. 2022 - <span className="italic">Present</span>
+                      Fall 2022 - <span className="italic">Present</span>
                     </p>
                   </div>
                   <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
@@ -308,7 +293,7 @@ export default function Home() {
                   <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                     <p className="italic">Undergraduate Researcher</p>
                     <p className="text-right">
-                      Aug. 2023 - <span className="italic">Present</span>
+                      Fall 2023 - <span className="italic">Present</span>
                     </p>
                   </div>
                   <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
@@ -324,9 +309,10 @@ export default function Home() {
                       AWS resources
                     </li>
                     <li>
-                      Writing efficient Python scripts and thorough OPA policies
-                      in Rego in order to automate the validation of our dataset
-                      of Terraform configurations
+                      Leveraging machine learning techniques to achieve a
+                      significant reduction in error rates and up to a 20%
+                      improvement in code synthesis accuracy during preliminary
+                      testing
                     </li>
                   </ul>
                 </div>
@@ -335,6 +321,35 @@ export default function Home() {
                 <h3 className="text-base sm:text-lg font-bold underline">
                   Projects
                 </h3>
+                <div id="resume-mwig">
+                  <div className="flex flex-row justify-between w-full items-baseline">
+                    <h4 className="text-sm sm:text-base leading-5 font-bold">
+                      R10K-Style Out-of-Order RISC-V Processor in SystemVerilog
+                    </h4>
+                    <p className="italic text-xs sm:text-sm text-right">
+                      Spring 2024
+                    </p>
+                  </div>
+                  <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                    <li>
+                      Spearheading the design and implementation of a RISC-V
+                      MIPS R10K-based out-of-order processor from scratch,
+                      employing SystemVerilog for high-level synthesis with a
+                      group of 4 other classmates
+                    </li>
+                    <li>
+                      Integrating simultaneous multithreading (SMT) with a 2-way
+                      superscalar architecture, doubling instruction throughput,
+                      and customizing thread scheduling and resource allocation
+                      mechanisms to maximize parallelism
+                    </li>
+                    <li>
+                      Incorporating advanced features such as an N-way
+                      associative cache, tournament branch predictor, and
+                      instruction/data prefetching
+                    </li>
+                  </ul>
+                </div>
                 <div id="resume-podium-prints">
                   <div className="flex flex-row justify-between w-full items-baseline">
                     <h4 className="text-sm sm:text-base leading-5 font-bold">
@@ -351,7 +366,7 @@ export default function Home() {
                         podium-prints.com
                       </a>
                     </h4>
-                    <p className="text-xs sm:text-sm text-right">Dec. 2023</p>
+                    <p className="text-xs sm:text-sm text-right">Fall 2023</p>
                   </div>
                   <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                     <li>
@@ -375,7 +390,7 @@ export default function Home() {
                     </li>
                   </ul>
                 </div>
-                <div id="resume-mwig">
+                {/* <div id="resume-mwig">
                   <div className="flex flex-row justify-between w-full items-baseline">
                     <h4 className="text-sm sm:text-base leading-5 font-bold">
                       Michigan Women Investment Group Website
@@ -401,7 +416,27 @@ export default function Home() {
                       devices
                     </li>
                   </ul>
-                </div>
+                </div> */}
+              </div>
+              <div id="resume-skills" className="mt-2">
+                <h3 className="text-base sm:text-lg font-bold underline">
+                  Skills
+                </h3>
+                <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                  <li>
+                    <span className="font-bold">Languages:</span> C, C++,
+                    &#123;System&#125;Verilog, RISC-V Assembly, Python, Java,
+                    &#123;Java/Type&#125;Script, SQL, Bash, HCL
+                  </li>
+                  <li>
+                    <span className="font-bold">Web Technologies:</span> React,
+                    Next.js, Express, Node.js, MongoDB, HTML, CSS
+                  </li>
+                  <li>
+                    <span className="font-bold">Technical/Tools:</span> Git, AWS
+                    (SDK, S3, and EC2), Docker, Terraform, Makefile, CMake
+                  </li>
+                </ul>
               </div>
               <div id="resume-honors-activities" className="mt-2">
                 <h3 className="text-base sm:text-lg font-bold underline">
@@ -409,18 +444,19 @@ export default function Home() {
                 </h3>
                 <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                   <li>
-                    <span className="font-bold">Honors:</span> University
-                    Dean&apos;s Honors List, Perfect ACT Scorer, AP Scholar with
-                    Distinction x3
+                    <span className="font-bold">Honors:</span> James B. Angell
+                    Scholar, University Honors, Perfect ACT Scorer, AP Scholar
+                    with Distinction x3
                   </li>
                   <li>
-                    <span className="font-bold">Affiliations:</span>{" "}
-                    Korean-American Scientists and Engineers Association, Asian
-                    American Association
+                    <span className="font-bold">Affiliations:</span> Traders at
+                    Michigan, Korean-American Scientists and Engineers
+                    Association
                   </li>
                   <li>
                     <span className="font-bold">Hobbies:</span> 7v7 Intramural
-                    Flag Football, 3v3 Intramural Basketball, Traveling, Hiking
+                    Flag Football, 3v3 Intramural Basketball, Poker, Traveling,
+                    Hiking
                   </li>
                 </ul>
               </div>
