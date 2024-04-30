@@ -9,8 +9,10 @@ interface ProjectDisplayProps {
   summary: string;
   details?: string;
   tags: string[];
-  github: string;
+  github?: string;
   website?: string;
+  miscLink?: string;
+  miscText?: string;
 }
 
 const ProjectDisplay = ({
@@ -21,6 +23,8 @@ const ProjectDisplay = ({
   tags,
   github,
   website,
+  miscLink,
+  miscText,
 }: ProjectDisplayProps) => {
   return (
     <div className="mx-auto max-w-2xl px-4 py-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
@@ -40,26 +44,40 @@ const ProjectDisplay = ({
           ))}
         </div>
         <div className="flex mt-2">
-          <Link
-            href={github}
-            className={buttonVariants({
-              className: "bg-orange-500 hover:bg-orange-400 mr-2",
-              variant: "outline",
-            })}
-            target="_blank"
-          >
-            View the code <Github className="pl-1" />
-          </Link>
+          {github ? (
+            <Link
+              href={github}
+              className={buttonVariants({
+                className: "bg-orange-500 hover:bg-orange-400 mr-2",
+                variant: "outline",
+              })}
+              target="_blank"
+            >
+              View the code <Github className="pl-1" />
+            </Link>
+          ) : null}
           {website ? (
             <Link
               href={website}
               className={buttonVariants({
-                className: "bg-orange-500 hover:bg-orange-400",
+                className: "bg-orange-500 hover:bg-orange-400 mr-2",
                 variant: "outline",
               })}
               target="_blank"
             >
               View the website &rarr;
+            </Link>
+          ) : null}
+          {miscLink ? (
+            <Link
+              href={miscLink}
+              className={buttonVariants({
+                className: "bg-orange-500 hover:bg-orange-400 mr-2",
+                variant: "outline",
+              })}
+              target="_blank"
+            >
+              {miscText} &rarr;
             </Link>
           ) : null}
         </div>
@@ -68,7 +86,7 @@ const ProjectDisplay = ({
         <div className="relative aspect-video w-full">
           <Image
             fill={true}
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl border-gray-400 border"
             src={imageSrc}
             alt="project preview"
           />

@@ -120,6 +120,14 @@ export default function Home() {
             Projects
           </h1>
           <ProjectDisplay
+            imageSrc="/project-previews/470-preview.webp"
+            title="R10K-Style Multithread Out-of-Order RISC-V Processor"
+            summary="A fully synthesizable R10K-style processor based on the RISC-V ISA in SystemVerilog with a 2-way superscalar architecture, simultaneous multithreading, and advanced features such as an 4-way associative cache, tournament branch predictor, and instruction prefetching. Achieved a clock period of 7.85ns and an average CPI of 1.05. Designed and implemented from scratch with a group of 4 other classmates as a part of EECS 470: Computer Architecture at the University of Michigan."
+            tags={["SystemVerilog", "RISC-V", "C", "VCS", "Makefile"]}
+            miscLink="/EECS-470-Final-Project-Report.pdf"
+            miscText="Read the report"
+          />
+          <ProjectDisplay
             imageSrc="/project-previews/podium-prints-preview.webp"
             title="Podium Prints Website"
             summary="A Next.js 14 fullstack ecommerce website to sell high-quality automotive artwork. Used Docker Compose, Terraform, and LocalStack to create an instant development environment with a mock S3 server and local MongoDB database. Dockerized and deployed to production on a VPS."
