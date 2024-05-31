@@ -26,10 +26,14 @@ export default function Home() {
         <section id="welcome" className="min-h-[90vh]">
           <div className="mt-36 mx-auto text-center flex flex-col items-center max-w-3xl">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight border-b pb-2 lg:text-5xl">
-              Hi, my name is <span className="text-orange-500">Owen Park</span>
+              hi, my name is{" "}
+              <span className="text-orange-500 pr-1">owen park</span>.
             </h1>
             <h2 className="scroll-m-20 pt-2 text-3xl font-semibold tracking-tight first:mt-0">
-              Computer Engineering at the University of Michigan
+              computer engineering at the{" "}
+              <span className="text-uofmblue underline decoration-maize rounded-md">
+                university of michigan
+              </span>
             </h2>
             <ul className="flex items-center mt-2">
               <li>
@@ -73,7 +77,8 @@ export default function Home() {
               <Link
                 href="#projects"
                 className={buttonVariants({
-                  className: "mr-2 bg-orange-500 hover:bg-orange-400",
+                  className:
+                    "mx-1 bg-orange-500 hover:bg-orange-400 hover:text-gray-700",
                   variant: "outline",
                 })}
               >
@@ -83,7 +88,7 @@ export default function Home() {
                 <DropdownMenuTrigger
                   className={buttonVariants({
                     className:
-                      "ml-2 pr-2.5 bg-orange-500 hover:bg-orange-400 data-[state=open]:bg-orange-400 group",
+                      "mx-1 pr-2.5 bg-orange-500 hover:bg-orange-400 data-[state=open]:bg-orange-400 group hover:text-gray-700 data-[state=open]:text-gray-700",
                     variant: "outline",
                   })}
                 >
@@ -92,8 +97,8 @@ export default function Home() {
                 </DropdownMenuTrigger>
 
                 <DropdownMenuContent
-                  onCloseAutoFocus={() => {
-                    event?.preventDefault;
+                  onCloseAutoFocus={(e) => {
+                    e?.preventDefault();
                   }}
                 >
                   <DropdownMenuGroup>
@@ -112,6 +117,18 @@ export default function Home() {
                   </DropdownMenuGroup>
                 </DropdownMenuContent>
               </DropdownMenu>
+              {/*
+              <Link
+                href="/blog"
+                className={buttonVariants({
+                  className:
+                    "mx-1 bg-orange-500 hover:bg-orange-400 hover:text-gray-700",
+                  variant: "outline",
+                })}
+              >
+                Blog
+              </Link>
+              */}
             </div>
           </div>
         </section>
