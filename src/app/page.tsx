@@ -120,6 +120,7 @@ export default function Home() {
                   </DropdownMenuGroup>
                 </DropdownMenuContent>
               </DropdownMenu>
+              {/*
               <Link
                 href="/blog"
                 className={buttonVariants({
@@ -130,6 +131,7 @@ export default function Home() {
               >
                 Blog
               </Link>
+              */}
             </div>
           </div>
         </section>
