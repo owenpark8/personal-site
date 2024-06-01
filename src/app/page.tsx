@@ -27,7 +27,10 @@ export default function Home() {
           <div className="mt-36 mx-auto text-center flex flex-col items-center max-w-3xl">
             <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight border-b pb-2 lg:text-5xl">
               hi, my name is{" "}
-              <span className="text-orange-500 pr-1">owen park</span>.
+              <span className="text-orange-500 whitespace-nowrap">
+                owen park
+              </span>
+              .
             </h1>
             <h2 className="scroll-m-20 pt-2 text-3xl font-semibold tracking-tight first:mt-0">
               computer engineering at the{" "}
@@ -41,7 +44,7 @@ export default function Home() {
                   href="mailto:owenpark@umich.edu"
                   target="_blank"
                   className={buttonVariants({
-                    className: "hover:bg-orange-100 rounded-3xl",
+                    className: "hover:bg-orange-200 rounded-3xl",
                     variant: "ghost",
                   })}
                 >
@@ -53,7 +56,7 @@ export default function Home() {
                   href="https://www.linkedin.com/in/owen-park/"
                   target="_blank"
                   className={buttonVariants({
-                    className: "hover:bg-orange-100 rounded-3xl",
+                    className: "hover:bg-orange-200 rounded-3xl",
                     variant: "ghost",
                   })}
                 >
@@ -65,7 +68,7 @@ export default function Home() {
                   href="https://github.com/owenpark8"
                   target="_blank"
                   className={buttonVariants({
-                    className: "hover:bg-orange-100 rounded-3xl",
+                    className: "hover:bg-orange-200 rounded-3xl",
                     variant: "ghost",
                   })}
                 >
@@ -102,22 +105,21 @@ export default function Home() {
                   }}
                 >
                   <DropdownMenuGroup>
-                    <a href="#resume">
+                    <Link href="#resume">
                       <DropdownMenuItem className="flex flex-row items-center justify-between w-36">
                         View in browser
                         <Globe className="h-4 w-4 ml-auto" />
                       </DropdownMenuItem>
-                    </a>
-                    <a href="/Owen-Park-Resume.pdf" download>
+                    </Link>
+                    <Link href="/Owen-Park-Resume.pdf" download>
                       <DropdownMenuItem className="flex flex-row items-center justify-between w-36">
                         Download PDF
                         <ArrowDownToLine className="h-4 w-4" />
                       </DropdownMenuItem>
-                    </a>
+                    </Link>
                   </DropdownMenuGroup>
                 </DropdownMenuContent>
               </DropdownMenu>
-              {/*
               <Link
                 href="/blog"
                 className={buttonVariants({
@@ -128,7 +130,6 @@ export default function Home() {
               >
                 Blog
               </Link>
-              */}
             </div>
           </div>
         </section>
@@ -183,31 +184,31 @@ export default function Home() {
               <div id="resume-header">
                 <h2 className="font-bold text-center text-3xl">Owen Park</h2>
                 <p className="mt-1 text-center text-xs">
-                  <a
+                  <Link
                     href="mailto:owenpark@umich.edu"
                     className="hover:underline underline-offset-4"
                   >
                     owenpark@umich.edu
-                  </a>{" "}
+                  </Link>{" "}
                   ​∙{" "}
-                  <a
+                  <Link
                     href="tel:201-390-7063"
                     className="hover:underline underline-offset-4"
                   >
                     (201) 390-7063
-                  </a>{" "}
+                  </Link>{" "}
                   ​∙{" "}
-                  <a
+                  <Link
                     href="https://linkedin.com/in/owen-park"
                     target="_blank"
                     className="hover:underline underline-offset-4"
                   >
                     linkedin.com/in/owen-park
-                  </a>{" "}
+                  </Link>{" "}
                   ∙{" "}
-                  <a href="#" className="hover:underline underline-offset-4">
+                  <Link href="#" className="hover:underline underline-offset-4">
                     owenpark.info
-                  </a>
+                  </Link>
                 </p>
               </div>
               <div id="resume-education" className="mt-2">
@@ -383,13 +384,13 @@ export default function Home() {
                         {" "}
                         - Full-Stack -{" "}
                       </span>
-                      <a
+                      <Link
                         href="https://podium-prints.com"
                         target="_blank"
                         className="font-normal text-blue-600 underline hover:text-blue-500"
                       >
                         podium-prints.com
-                      </a>
+                      </Link>
                     </h4>
                     <p className="text-xs sm:text-sm text-right">Fall 2023</p>
                   </div>
@@ -487,7 +488,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <a
+          <Link
             href="/Owen-Park-Resume.pdf"
             className={buttonVariants({
               className: "mt-6 mb-20 mr-2 bg-orange-500 hover:bg-orange-400",
@@ -496,7 +497,7 @@ export default function Home() {
             download
           >
             Download PDF <ArrowDownToLine className="h-4 w-4 ml-2" />
-          </a>
+          </Link>
         </section>
       </MaxWidthWrapper>
     </>
