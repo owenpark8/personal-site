@@ -65,7 +65,7 @@ const ProjectDisplay = ({
               })}
               target="_blank"
             >
-              View the website &rarr;
+              Visit the website &rarr;
             </Link>
           ) : null}
           {miscLink ? (
