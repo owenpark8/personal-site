@@ -7,6 +7,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { convertDateToString } from "@/lib/utils";
 import "@/styles/markdown.css";
 
+export const dynamicParams = false;
+
 const md = markdownit();
 
 export function generateStaticParams() {
