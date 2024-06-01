@@ -4,21 +4,10 @@ import matter from "gray-matter";
 import path from "path";
 import markdownit from "markdown-it";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { convertDateToString } from "@/lib/utils";
 import "@/styles/markdown.css";
-import { ArrowUp } from "lucide-react";
 
 const md = markdownit();
-
-export function convertDateToString(date: Date | null): string {
-  const dateOptions: Intl.DateTimeFormatOptions = {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  };
-
-  if (!date || date === new Date(0)) return "No date";
-  return date.toLocaleDateString("en-US", dateOptions);
-}
 
 export function generateStaticParams() {
   const postsDirectory = path.join(process.cwd(), "public/blog-posts");
@@ -37,7 +26,7 @@ export function generateStaticParams() {
   });
 }
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const postsDirectory = path.join(process.cwd(), "public/blog-posts");
   const filePath = path.join(postsDirectory, `${slug}.md`);

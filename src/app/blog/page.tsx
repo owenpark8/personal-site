@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import { generateStaticParams, convertDateToString } from "./[slug]/page";
+import { generateStaticParams } from "./[slug]/page";
+import { convertDateToString } from "@/lib/utils";
 
 export default function Blog() {
   const paths = generateStaticParams();
