@@ -28,7 +28,7 @@ export default function Blog() {
             </h3>
           </div>
         </section>
-        <section id="blog-post-list" className="mt-12">
+        <section id="blog-post-list" className="mt-12 mx-4">
           <ul className="mx-auto max-w-lg">
             {paths
               .sort((a, b) => b.date.getTime() - a.date.getTime())
