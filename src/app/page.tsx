@@ -1,6 +1,7 @@
 "use client";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import ProjectDisplay from "@/components/ProjectDisplay";
+import BulletPointList from "@/components/resume/BulletPointList";
 import { buttonVariants } from "@/components/ui/button";
 import {
     DropdownMenu,
@@ -227,49 +228,52 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
+                                        <p className="italic">(Expected) M.S.E. in ECE</p>
+                                        <p className="italic text-right">Jan. 2025 - Dec. 2025</p>
+                                    </div>
+                                    <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                                         <p className="italic">B.S.E. in Computer Engineering</p>
-                                        <p className="italic text-right">April 2025</p>
+                                        <p className="italic text-right">Aug. 2022 - Dec. 2024</p>
                                     </div>
                                     <ul className="list-disc ml-4 sm:ml-6 text-xs sm:text-sm">
                                         <li>
                                             <span className="font-bold">GPA:</span> 3.92 / 4.0
                                         </li>
                                         <li>
-                                            <span className="font-bold">Coursework:</span> Computer
-                                            Architecture, Embedded Systems, Data Structures and
-                                            Algorithms, Digital Circuits, Wireless Systems, Signals
-                                            and Systems, CS Pragmatics, Discrete Math, Calculus I-IV,
-                                            Linear Algebra, Probability
+                                            <span className="font-bold">Coursework:</span>
+                                            Computer Architecture, Operating Systems, Embedded Systems, Applied GPU Parallel Programming, Data Structures and Algorithms, Wireless Systems, Signals and Systems
                                         </li>
                                     </ul>
                                 </div>
-                                {/* <div className="mt-2">
-                  <div className="flex flex-row justify-between w-full items-baseline">
-                    <h4 className="text-sm sm:text-base leading-5 font-bold">
-                      CEA CAPA
-                    </h4>
-                    <p className="text-xs sm:text-sm font-bold">
-                      Prague, Czechia
-                    </p>
-                  </div>
-                  <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                    <p className="italic">
-                      International Program in Engineering
-                    </p>
-                    <p className="text-right">Summer 2023</p>
-                  </div>
-                  <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
-                    <li>
-                      Coursework: Linear Algebra, Art History of Prague: Past
-                      and Present
-                    </li>
-                  </ul>
-                </div> */}
                             </div>
                             <div id="resume-experience" className="mt-2">
                                 <h3 className="text-base sm:text-lg font-bold underline">
                                     Experience
                                 </h3>
+                                <div id="resume-magna">
+                                    <div className="flex flex-row justify-between w-full items-baseline">
+                                        <h4 className="text-sm sm:text-base leading-5 font-bold">
+                                            Magna International
+                                        </h4>
+                                        <p className="text-xs sm:text-sm font-bold">
+                                            Troy, MI
+                                        </p>
+                                    </div>
+                                    <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
+                                        <p className="italic">Embedded Software Engineer Intern</p>
+                                        <p className="text-right">
+                                            Summer 2024
+                                        </p>
+                                    </div>
+                                    <BulletPointList>
+                                        <li>
+                                            Wrote C firmware for embedded Linux, QNX, and RTOS for the EV and autonomous driving R&D department
+                                        </li>
+                                        <li>
+                                            Developed robust OpenVX camera streaming applications for TI’s TDA4VM SoC by interfacing kernel drivers and utilizing inter-processor communication, successfully reducing latency by 33% over the entire video pipeline
+                                        </li>
+                                    </BulletPointList>
+                                </div>
                                 <div id="resume-michigan-mars-rover">
                                     <div className="flex flex-row justify-between w-full items-baseline">
                                         <h4 className="text-sm sm:text-base leading-5 font-bold">
@@ -282,15 +286,25 @@ export default function Home() {
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                                         <p className="italic">Embedded Software Member</p>
                                         <p className="text-right">
-                                            Fall 2022 - <span className="italic">Present</span>
+                                            Aug. 2024 - <span className="italic">Present</span>
                                         </p>
                                     </div>
-                                    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                                    <BulletPointList>
+                                        <li>
+                                            Leading the embedded software team, orchestrating meetings, spearheading recruitment and onboarding, and educating new members
+                                        </li>
+                                    </BulletPointList>
+                                    <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
+                                        <p className="italic">Embedded Software Member</p>
+                                        <p className="text-right">
+                                            Sept. 2022 - Apr. 2024
+                                        </p>
+                                    </div>
+                                    <BulletPointList>
                                         <li>
                                             Integrated FreeRTOS on STM32 microcontrollers in C to
                                             manage concurrent tasks with various sensors, ensuring
-                                            efficient communication and coordination between the
-                                            subsystems
+                                            efficient communication and coordination between subsystems
                                         </li>
                                         <li>
                                             Designed and implemented a C++ ROS nodelet, interfacing
@@ -302,149 +316,73 @@ export default function Home() {
                                             topics and communicate with the CAN bus, enhancing
                                             real-time data exchange efficiency
                                         </li>
-                                        <li>
-                                            Accomplished successful CAN communication between various
-                                            STM32G4 microcontrollers, allowing for full functionality
-                                            on our rover, replacing our existing I2C system
-                                        </li>
-                                    </ul>
+                                    </BulletPointList>
                                 </div>
-                                <div id="resume-research" className="mt-1">
+                                <div id="resume-eecs370">
                                     <div className="flex flex-row justify-between w-full items-baseline">
                                         <h4 className="text-sm sm:text-base leading-5 font-bold">
-                                            University of Michigan CSE Department
+                                            University of Michigan
                                         </h4>
                                         <p className="text-xs sm:text-sm font-bold">
                                             Ann Arbor, MI
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">Undergraduate Researcher</p>
+                                        <p className="italic">Teaching Assistant for EECS 370: Introduction to Computer Organization</p>
                                         <p className="text-right">
-                                            Fall 2023 - <span className="italic">Present</span>
+                                            Aug. 2024 - <span className="italic">Present</span>
                                         </p>
                                     </div>
-                                    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                                    <BulletPointList>
                                         <li>
-                                            Researching how large language models can be used to
-                                            generate infrastructure as code configuration files for
-                                            Terraform from natural language descriptions to present at
-                                            the International Conference on Machine Learning
+                                            Leading lab section on hardware/software interaction, assembly language, and computer hardware design
                                         </li>
-                                        <li>
-                                            Building a comprehensive dataset of over 1,000 different
-                                            prompts, policies, and target configurations of Terraform
-                                            AWS resources
-                                        </li>
-                                        <li>
-                                            Leveraging machine learning techniques to achieve a
-                                            significant reduction in error rates and up to a 20%
-                                            improvement in code synthesis accuracy during preliminary
-                                            testing
-                                        </li>
-                                    </ul>
+                                    </BulletPointList>
                                 </div>
                             </div>
                             <div id="resume-projects" className="mt-2">
                                 <h3 className="text-base sm:text-lg font-bold underline">
                                     Projects
                                 </h3>
-                                <div id="resume-mwig">
+                                <div id="resume-eecs470">
                                     <div className="flex flex-row justify-between w-full items-baseline">
                                         <h4 className="text-sm sm:text-base leading-5 font-bold">
-                                            R10K-Style Out-of-Order RISC-V Processor in SystemVerilog
+                                            Multithread Out-of-Order RISC-V Processor in SystemVerilog
                                         </h4>
-                                        <p className="italic text-xs sm:text-sm text-right">
+                                        <p className="text-xs sm:text-sm text-right">
                                             Spring 2024
                                         </p>
                                     </div>
-                                    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                                    <BulletPointList>
                                         <li>
-                                            Spearheading the design and implementation of a RISC-V
-                                            MIPS R10K-based out-of-order processor from scratch,
-                                            employing SystemVerilog for high-level synthesis with a
-                                            group of 4 other classmates
+                                            Spearheaded the design and implementation of a RISC-V MIPS R10K-based out-of-order processor from scratch, employing SystemVerilog and Synopsys Design Compiler for design, verification, and synthesis with a group of 4 other classmates
                                         </li>
                                         <li>
-                                            Integrating simultaneous multithreading (SMT) with a 2-way
-                                            superscalar architecture, doubling instruction throughput,
-                                            and customizing thread scheduling and resource allocation
-                                            mechanisms to maximize parallelism
+                                            Integrated simultaneous multithreading (SMT) with a 2-way superscalar architecture, effectively doubling instruction throughput and maximizing parallelism, achieving the fastest processor in the class semester
                                         </li>
                                         <li>
-                                            Incorporating advanced features such as an N-way
-                                            associative cache, tournament branch predictor, and
-                                            instruction/data prefetching
+                                            Designed a custom instruction cache with multiple concurrent prefetch buffers for each thread’s stream of execution, resulting in a 150% increase in performance (measured in cycles per instruction)
                                         </li>
-                                    </ul>
+                                    </BulletPointList>
                                 </div>
-                                <div id="resume-podium-prints">
+                                <div id="resume-eecs373">
                                     <div className="flex flex-row justify-between w-full items-baseline">
                                         <h4 className="text-sm sm:text-base leading-5 font-bold">
-                                            Podium Prints Ecommerce Website
-                                            <span className="italic font-normal">
-                                                {" "}
-                                                - Full-Stack -{" "}
-                                            </span>
-                                            <Link
-                                                href="https://podium-prints.com"
-                                                target="_blank"
-                                                className="font-normal text-blue-600 underline hover:text-blue-500"
-                                            >
-                                                podium-prints.com
-                                            </Link>
+                                            Autonomous Shopping Cart
                                         </h4>
-                                        <p className="text-xs sm:text-sm text-right">Fall 2023</p>
+                                        <p className="text-xs sm:text-sm text-right">
+                                            Spring 2024
+                                        </p>
                                     </div>
-                                    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+                                    <BulletPointList>
                                         <li>
-                                            Developed a full-stack ecommerce web app in TypeScript
-                                            with a Next.js frontend and an Express backend,
-                                            integrating Payload CMS to easily access a MongoDB
-                                            database and AWS S3 bucket
+                                            Developed a user-tracking autonomous shopping cart using STM32 microcontrollers, leveraging I2C/SPI communication protocols for sensor integration, motor control, and user interface through an LCD screen
                                         </li>
                                         <li>
-                                            Managed API endpoints using tRPC, ensuring a type-safe
-                                            backend that seamlessly integrated with the frontend
+                                            Implemented tracking algorithms with PixyCam data for user recognition and ultrasonic triangulation for enhanced directional tracking
                                         </li>
-                                        <li>
-                                            Leveraged the Stripe API and webhooks to handle secure and
-                                            efficient payment processing
-                                        </li>
-                                        <li>
-                                            Used Docker Compose, Terraform, and LocalStack to create
-                                            an instant development environment with a mock S3 server
-                                            and local MongoDB database
-                                        </li>
-                                    </ul>
+                                    </BulletPointList>
                                 </div>
-                                {/* <div id="resume-mwig">
-                  <div className="flex flex-row justify-between w-full items-baseline">
-                    <h4 className="text-sm sm:text-base leading-5 font-bold">
-                      Michigan Women Investment Group Website
-                      <span className="italic font-normal">
-                        {" "}
-                        - Front End -{" "}
-                      </span>
-                      <a
-                        href="https://michiganwig.com"
-                        target="_blank"
-                        className="font-normal text-blue-600 underline hover:text-blue-500"
-                      >
-                        michiganwig.com
-                      </a>
-                    </h4>
-                    <p className="text-xs sm:text-sm text-right">Sept. 2023</p>
-                  </div>
-                  <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
-                    <li>
-                      Designed and deployed a responsive single-page site for
-                      the MWIG organization using vanilla JavaScript, HTML, and
-                      CSS, ensuring a seamless user experience across all
-                      devices
-                    </li>
-                  </ul>
-                </div> */}
                             </div>
                             <div id="resume-skills" className="mt-2">
                                 <h3 className="text-base sm:text-lg font-bold underline">
@@ -453,17 +391,12 @@ export default function Home() {
                                 <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                                     <li>
                                         <span className="font-bold">Languages:</span> C, C++,
-                                        &#123;System&#125;Verilog, RISC-V Assembly, Python, Java,
-                                        &#123;Java/Type&#125;Script, SQL, Bash, HCL
+                                        &#123;System&#125;Verilog, &#123;RISC-V/ARMv7-M&#125; Assembly, Python, Java,
+                                        &#123;Java/Type&#125;Script, Bash
                                     </li>
                                     <li>
-                                        <span className="font-bold">Web Technologies:</span> React,
-                                        Next.js, Express, Node.js, MongoDB, HTML, CSS
-                                    </li>
-                                    <li>
-                                        <span className="font-bold">Technical/Tools:</span> Git, AWS
-                                        (SDK, S3, and EC2), Docker, Terraform, Makefile, CMake
-                                    </li>
+                                        <span className="font-bold">Technical/Tools:</span>
+                                        {" "}Git, Makefile, CMake, Synopsys VCS, AWS (SDK, S3, and EC2), Docker, Terraform                                    </li>
                                 </ul>
                             </div>
                             <div id="resume-honors-activities" className="mt-2">
@@ -505,3 +438,115 @@ export default function Home() {
         </>
     );
 }
+
+{/*
+<div id="resume-mwig">
+  <div className="flex flex-row justify-between w-full items-baseline">
+    <h4 className="text-sm sm:text-base leading-5 font-bold">
+      Michigan Women Investment Group Website
+      <span className="italic font-normal">
+        {" "}
+        - Front End -{" "}
+      </span>
+      <a
+        href="https://michiganwig.com"
+        target="_blank"
+        className="font-normal text-blue-600 underline hover:text-blue-500"
+      >
+        michiganwig.com
+      </a>
+    </h4>
+    <p className="text-xs sm:text-sm text-right">Sept. 2023</p>
+  </div>
+  <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+    <li>
+      Designed and deployed a responsive single-page site for
+      the MWIG organization using vanilla JavaScript, HTML, and
+      CSS, ensuring a seamless user experience across all
+      devices
+    </li>
+  </ul>
+</div>
+
+
+<div id="resume-research" className="mt-1">
+    <div className="flex flex-row justify-between w-full items-baseline">
+        <h4 className="text-sm sm:text-base leading-5 font-bold">
+            University of Michigan CSE Department
+        </h4>
+        <p className="text-xs sm:text-sm font-bold">
+            Ann Arbor, MI
+        </p>
+    </div>
+    <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
+        <p className="italic">Undergraduate Researcher</p>
+        <p className="text-right">
+            Fall 2023 - <span className="italic">Present</span>
+        </p>
+    </div>
+    <BulletPointList>
+        <li>
+            Researching how large language models can be used to
+            generate infrastructure as code configuration files for
+            Terraform from natural language descriptions to present at
+            the International Conference on Machine Learning
+        </li>
+        <li>
+            Building a comprehensive dataset of over 1,000 different
+            prompts, policies, and target configurations of Terraform
+            AWS resources
+        </li>
+        <li>
+            Leveraging machine learning techniques to achieve a
+            significant reduction in error rates and up to a 20%
+            improvement in code synthesis accuracy during preliminary
+            testing
+        </li>
+    </BulletPointList>
+</div>
+
+
+<div id="resume-podium-prints">
+    <div className="flex flex-row justify-between w-full items-baseline">
+        <h4 className="text-sm sm:text-base leading-5 font-bold">
+            Podium Prints Ecommerce Website
+            <span className="italic font-normal">
+                {" "}
+                - Full-Stack -{" "}
+            </span>
+            <Link
+                href="https://podium-prints.com"
+                target="_blank"
+                className="font-normal text-blue-600 underline hover:text-blue-500"
+            >
+                podium-prints.com
+            </Link>
+        </h4>
+        <p className="text-xs sm:text-sm text-right">Fall 2023</p>
+    </div>
+    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
+        <li>
+            Developed a full-stack ecommerce web app in TypeScript
+            with a Next.js frontend and an Express backend,
+            integrating Payload CMS to easily access a MongoDB
+            database and AWS S3 bucket
+        </li>
+        <li>
+            Managed API endpoints using tRPC, ensuring a type-safe
+            backend that seamlessly integrated with the frontend
+        </li>
+        <li>
+            Leveraged the Stripe API and webhooks to handle secure and
+            efficient payment processing
+        </li>
+        <li>
+            Used Docker Compose, Terraform, and LocalStack to create
+            an instant development environment with a mock S3 server
+            and local MongoDB database
+        </li>
+    </ul>
+</div>
+
+
+*/}
+
