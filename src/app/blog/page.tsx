@@ -23,7 +23,7 @@ export default function Blog() {
                             owen park&apos;s blog
                         </h1>
                         <h2 className="scroll-m-20 pt-2 text-3xl font-semibold tracking-tight pb-2 border-b">
-                            project info and random thoughts
+                            random thoughts
                         </h2>
                         <h3 className="pt-2 text-xl font-medium tracking-tight">
                             for more information about me, go to my{" "}
