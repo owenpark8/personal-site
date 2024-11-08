@@ -45,7 +45,8 @@ export default function Home() {
                                     href="mailto:owenpark@umich.edu"
                                     target="_blank"
                                     className={buttonVariants({
-                                        className: "hover:bg-orange-200 rounded-3xl",
+                                        className:
+                                            "hover:bg-orange-200 rounded-3xl",
                                         variant: "ghost",
                                     })}
                                 >
@@ -57,7 +58,8 @@ export default function Home() {
                                     href="https://www.linkedin.com/in/owen-park/"
                                     target="_blank"
                                     className={buttonVariants({
-                                        className: "hover:bg-orange-200 rounded-3xl",
+                                        className:
+                                            "hover:bg-orange-200 rounded-3xl",
                                         variant: "ghost",
                                     })}
                                 >
@@ -69,7 +71,8 @@ export default function Home() {
                                     href="https://github.com/owenpark8"
                                     target="_blank"
                                     className={buttonVariants({
-                                        className: "hover:bg-orange-200 rounded-3xl",
+                                        className:
+                                            "hover:bg-orange-200 rounded-3xl",
                                         variant: "ghost",
                                     })}
                                 >
@@ -112,7 +115,10 @@ export default function Home() {
                                                 <Globe className="h-4 w-4 ml-auto" />
                                             </DropdownMenuItem>
                                         </Link>
-                                        <Link href="/Owen_Park_Resume.pdf" download>
+                                        <Link
+                                            href="/Owen_Park_Resume.pdf"
+                                            download
+                                        >
                                             <DropdownMenuItem className="flex flex-row items-center justify-between w-36">
                                                 Download PDF
                                                 <ArrowDownToLine className="h-4 w-4" />
@@ -144,7 +150,13 @@ export default function Home() {
                         imageSrc="/project-previews/470-preview.webp"
                         title="R10K-Style Multithread Out-of-Order RISC-V Processor"
                         summary="A fully synthesizable R10K-style processor based on the RISC-V ISA in SystemVerilog with a 2-way superscalar architecture, simultaneous multithreading, and advanced features such as an 4-way associative cache, tournament branch predictor, and instruction prefetching. Achieved a clock period of 7.85ns and an average CPI of 1.05. Designed and implemented from scratch with a group of 4 other classmates as a part of EECS 470: Computer Architecture at the University of Michigan."
-                        tags={["SystemVerilog", "RISC-V", "C", "VCS", "Makefile"]}
+                        tags={[
+                            "SystemVerilog",
+                            "RISC-V",
+                            "C",
+                            "VCS",
+                            "Makefile",
+                        ]}
                         miscLink="/EECS-470-Final-Project-Report.pdf"
                         miscText="Read the report"
                     />
@@ -185,7 +197,9 @@ export default function Home() {
                     <div className="mt-4 max-w-[90vw] w-[60rem] border border-gray-700 rounded-lg">
                         <div className="my-8 md:mx-12 mx-4">
                             <div id="resume-header">
-                                <h2 className="font-bold text-center text-3xl">Owen Park</h2>
+                                <h2 className="font-bold text-center text-3xl">
+                                    Owen Park
+                                </h2>
                                 <p className="mt-1 text-center text-xs">
                                     <Link
                                         href="mailto:owenpark@umich.edu"
@@ -209,7 +223,10 @@ export default function Home() {
                                         linkedin.com/in/owen-park
                                     </Link>{" "}
                                     ∙{" "}
-                                    <Link href="#" className="hover:underline underline-offset-4">
+                                    <Link
+                                        href="#"
+                                        className="hover:underline underline-offset-4"
+                                    >
                                         owenpark.info
                                     </Link>
                                 </p>
@@ -228,20 +245,37 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">(Expected) M.S.E. in ECE</p>
-                                        <p className="italic text-right">Jan. 2025 - Dec. 2025</p>
+                                        <p className="italic">
+                                            (Expected) M.S.E. in ECE
+                                        </p>
+                                        <p className="italic text-right">
+                                            Jan. 2025 - Dec. 2025
+                                        </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">B.S.E. in Computer Engineering</p>
-                                        <p className="italic text-right">Aug. 2022 - Dec. 2024</p>
+                                        <p className="italic">
+                                            B.S.E. in Computer Engineering
+                                        </p>
+                                        <p className="italic text-right">
+                                            Aug. 2022 - Dec. 2024
+                                        </p>
                                     </div>
                                     <ul className="list-disc ml-4 sm:ml-6 text-xs sm:text-sm">
                                         <li>
-                                            <span className="font-bold">GPA:</span> 3.92 / 4.0
+                                            <span className="font-bold">
+                                                GPA:
+                                            </span>{" "}
+                                            3.92 / 4.0
                                         </li>
                                         <li>
-                                            <span className="font-bold">Coursework:</span>
-                                            Computer Architecture, Operating Systems, Embedded Systems, Applied GPU Parallel Programming, Data Structures and Algorithms, Wireless Systems, Signals and Systems
+                                            <span className="font-bold">
+                                                Coursework:
+                                            </span>
+                                            Computer Architecture, Operating
+                                            Systems, Embedded Systems, Applied
+                                            GPU Parallel Programming, Data
+                                            Structures and Algorithms, Wireless
+                                            Systems, Signals and Systems
                                         </li>
                                     </ul>
                                 </div>
@@ -260,17 +294,27 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">Embedded Software Engineer Intern</p>
+                                        <p className="italic">
+                                            Embedded Software Engineer Intern
+                                        </p>
                                         <p className="text-right">
                                             Summer 2024
                                         </p>
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Wrote C firmware for embedded Linux, QNX, and RTOS for the EV and autonomous driving R&D department
+                                            Wrote C firmware for embedded Linux,
+                                            QNX, and RTOS for the EV and
+                                            autonomous driving R&D department
                                         </li>
                                         <li>
-                                            Developed robust OpenVX camera streaming applications for TI’s TDA4VM SoC by interfacing kernel drivers and utilizing inter-processor communication, successfully reducing latency by 33% over the entire video pipeline
+                                            Developed robust OpenVX camera
+                                            streaming applications for TI’s
+                                            TDA4VM SoC by interfacing kernel
+                                            drivers and utilizing
+                                            inter-processor communication,
+                                            successfully reducing latency by 33%
+                                            over the entire video pipeline
                                         </li>
                                     </BulletPointList>
                                 </div>
@@ -284,37 +328,54 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">Embedded Software Member</p>
+                                        <p className="italic">
+                                            Embedded Software Member
+                                        </p>
                                         <p className="text-right">
-                                            Aug. 2024 - <span className="italic">Present</span>
+                                            Aug. 2024 -{" "}
+                                            <span className="italic">
+                                                Present
+                                            </span>
                                         </p>
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Leading the embedded software team, orchestrating meetings, spearheading recruitment and onboarding, and educating new members
+                                            Leading the embedded software team,
+                                            orchestrating meetings, spearheading
+                                            recruitment and onboarding, and
+                                            educating new members
                                         </li>
                                     </BulletPointList>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">Embedded Software Member</p>
+                                        <p className="italic">
+                                            Embedded Software Member
+                                        </p>
                                         <p className="text-right">
                                             Sept. 2022 - Apr. 2024
                                         </p>
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Integrated FreeRTOS on STM32 microcontrollers in C to
-                                            manage concurrent tasks with various sensors, ensuring
-                                            efficient communication and coordination between subsystems
+                                            Integrated FreeRTOS on STM32
+                                            microcontrollers in C to manage
+                                            concurrent tasks with various
+                                            sensors, ensuring efficient
+                                            communication and coordination
+                                            between subsystems
                                         </li>
                                         <li>
-                                            Designed and implemented a C++ ROS nodelet, interfacing
-                                            the NVIDIA MTTCAN driver on our Jetson and integrating
-                                            netlink sockets for CAN interface activation
+                                            Designed and implemented a C++ ROS
+                                            nodelet, interfacing the NVIDIA
+                                            MTTCAN driver on our Jetson and
+                                            integrating netlink sockets for CAN
+                                            interface activation
                                         </li>
                                         <li>
-                                            Leveraged multithreading to concurrently read from ROS
-                                            topics and communicate with the CAN bus, enhancing
-                                            real-time data exchange efficiency
+                                            Leveraged multithreading to
+                                            concurrently read from ROS topics
+                                            and communicate with the CAN bus,
+                                            enhancing real-time data exchange
+                                            efficiency
                                         </li>
                                     </BulletPointList>
                                 </div>
@@ -328,14 +389,24 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">Teaching Assistant for EECS 370: Introduction to Computer Organization</p>
+                                        <p className="italic">
+                                            Teaching Assistant for EECS 370:
+                                            Introduction to Computer
+                                            Organization
+                                        </p>
                                         <p className="text-right">
-                                            Aug. 2024 - <span className="italic">Present</span>
+                                            Aug. 2024 -{" "}
+                                            <span className="italic">
+                                                Present
+                                            </span>
                                         </p>
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Leading lab section on hardware/software interaction, assembly language, and computer hardware design
+                                            Leading lab section on
+                                            hardware/software interaction,
+                                            assembly language, and computer
+                                            hardware design
                                         </li>
                                     </BulletPointList>
                                 </div>
@@ -347,7 +418,8 @@ export default function Home() {
                                 <div id="resume-eecs470">
                                     <div className="flex flex-row justify-between w-full items-baseline">
                                         <h4 className="text-sm sm:text-base leading-5 font-bold">
-                                            Multithread Out-of-Order RISC-V Processor in SystemVerilog
+                                            Multithread Out-of-Order RISC-V
+                                            Processor in SystemVerilog
                                         </h4>
                                         <p className="text-xs sm:text-sm text-right">
                                             Spring 2024
@@ -355,13 +427,31 @@ export default function Home() {
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Spearheaded the design and implementation of a RISC-V MIPS R10K-based out-of-order processor from scratch, employing SystemVerilog and Synopsys Design Compiler for design, verification, and synthesis with a group of 4 other classmates
+                                            Spearheaded the design and
+                                            implementation of a RISC-V MIPS
+                                            R10K-based out-of-order processor
+                                            from scratch, employing
+                                            SystemVerilog and Synopsys Design
+                                            Compiler for design, verification,
+                                            and synthesis with a group of 4
+                                            other classmates
                                         </li>
                                         <li>
-                                            Integrated simultaneous multithreading (SMT) with a 2-way superscalar architecture, effectively doubling instruction throughput and maximizing parallelism, achieving the fastest processor in the class semester
+                                            Integrated simultaneous
+                                            multithreading (SMT) with a 2-way
+                                            superscalar architecture,
+                                            effectively doubling instruction
+                                            throughput and maximizing
+                                            parallelism, achieving the fastest
+                                            processor in the class semester
                                         </li>
                                         <li>
-                                            Designed a custom instruction cache with multiple concurrent prefetch buffers for each thread’s stream of execution, resulting in a 150% increase in performance (measured in cycles per instruction)
+                                            Designed a custom instruction cache
+                                            with multiple concurrent prefetch
+                                            buffers for each thread’s stream of
+                                            execution, resulting in a 150%
+                                            increase in performance (measured in
+                                            cycles per instruction)
                                         </li>
                                     </BulletPointList>
                                 </div>
@@ -376,10 +466,18 @@ export default function Home() {
                                     </div>
                                     <BulletPointList>
                                         <li>
-                                            Developed a user-tracking autonomous shopping cart using STM32 microcontrollers, leveraging I2C/SPI communication protocols for sensor integration, motor control, and user interface through an LCD screen
+                                            Developed a user-tracking autonomous
+                                            shopping cart using STM32
+                                            microcontrollers, leveraging I2C/SPI
+                                            communication protocols for sensor
+                                            integration, motor control, and user
+                                            interface through an LCD screen
                                         </li>
                                         <li>
-                                            Implemented tracking algorithms with PixyCam data for user recognition and ultrasonic triangulation for enhanced directional tracking
+                                            Implemented tracking algorithms with
+                                            PixyCam data for user recognition
+                                            and ultrasonic triangulation for
+                                            enhanced directional tracking
                                         </li>
                                     </BulletPointList>
                                 </div>
@@ -390,13 +488,21 @@ export default function Home() {
                                 </h3>
                                 <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                                     <li>
-                                        <span className="font-bold">Languages:</span> C, C++,
-                                        &#123;System&#125;Verilog, &#123;RISC-V/ARMv7-M&#125; Assembly, Python, Java,
+                                        <span className="font-bold">
+                                            Languages:
+                                        </span>{" "}
+                                        C, C++, &#123;System&#125;Verilog,
+                                        &#123;RISC-V/ARMv7-M&#125; Assembly,
+                                        Python, Java,
                                         &#123;Java/Type&#125;Script, Bash
                                     </li>
                                     <li>
-                                        <span className="font-bold">Technical/Tools:</span>
-                                        {" "}Git, Makefile, CMake, Synopsys VCS, AWS (SDK, S3, and EC2), Docker, Terraform                                    </li>
+                                        <span className="font-bold">
+                                            Technical/Tools:
+                                        </span>{" "}
+                                        Git, Makefile, CMake, Synopsys VCS, AWS
+                                        (SDK, S3, and EC2), Docker, Terraform{" "}
+                                    </li>
                                 </ul>
                             </div>
                             <div id="resume-honors-activities" className="mt-2">
@@ -405,18 +511,26 @@ export default function Home() {
                                 </h3>
                                 <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
                                     <li>
-                                        <span className="font-bold">Honors:</span> James B. Angell
-                                        Scholar, University Honors, Perfect ACT Scorer, AP Scholar
+                                        <span className="font-bold">
+                                            Honors:
+                                        </span>{" "}
+                                        James B. Angell Scholar, University
+                                        Honors, Perfect ACT Scorer, AP Scholar
                                         with Distinction x3
                                     </li>
                                     <li>
-                                        <span className="font-bold">Affiliations:</span> Traders at
-                                        Michigan, Korean-American Scientists and Engineers
-                                        Association
+                                        <span className="font-bold">
+                                            Affiliations:
+                                        </span>{" "}
+                                        Traders at Michigan, Korean-American
+                                        Scientists and Engineers Association
                                     </li>
                                     <li>
-                                        <span className="font-bold">Hobbies:</span> 7v7 Intramural
-                                        Flag Football, 3v3 Intramural Basketball, Poker, Traveling,
+                                        <span className="font-bold">
+                                            Hobbies:
+                                        </span>{" "}
+                                        7v7 Intramural Flag Football, 3v3
+                                        Intramural Basketball, Poker, Traveling,
                                         Hiking
                                     </li>
                                 </ul>
@@ -426,12 +540,14 @@ export default function Home() {
                     <Link
                         href="/Owen-Park-Resume.pdf"
                         className={buttonVariants({
-                            className: "mt-6 mb-20 mr-2 bg-orange-500 hover:bg-orange-400",
+                            className:
+                                "mt-6 mb-20 mr-2 bg-orange-500 hover:bg-orange-400",
                             variant: "outline",
                         })}
                         download
                     >
-                        Download PDF <ArrowDownToLine className="h-4 w-4 ml-2" />
+                        Download PDF{" "}
+                        <ArrowDownToLine className="h-4 w-4 ml-2" />
                     </Link>
                 </section>
             </MaxWidthWrapper>
@@ -439,7 +555,8 @@ export default function Home() {
     );
 }
 
-{/*
+{
+    /*
 <div id="resume-mwig">
   <div className="flex flex-row justify-between w-full items-baseline">
     <h4 className="text-sm sm:text-base leading-5 font-bold">
@@ -548,5 +665,5 @@ export default function Home() {
 </div>
 
 
-*/}
-
+*/
+}

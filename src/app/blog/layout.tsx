@@ -5,14 +5,14 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Owen Park's Blog",
-  description: "A blog by Owen Park",
+    title: "Owen Park's Blog",
+    description: "A blog by Owen Park",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return <>{children}</>;
+    return <>{children}</>;
 }

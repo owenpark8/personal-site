@@ -9,7 +9,12 @@ const BulletPointList = ({
     children: ReactNode;
 }) => {
     return (
-        <ul className={cn("text-xs sm:text-sm list-disc ml-4 sm:ml-6", className)}>
+        <ul
+            className={cn(
+                "text-xs sm:text-sm list-disc ml-4 sm:ml-6",
+                className,
+            )}
+        >
             {children}
         </ul>
     );
