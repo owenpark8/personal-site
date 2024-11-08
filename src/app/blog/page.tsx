@@ -2,50 +2,17 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import PostList from "@/components/PostList";
 import Link from "next/link";
 import path from "path";
-import fs from "fs";
-import matter from "gray-matter";
+import { getPostsFromDirectory } from "@/lib/blogPosts";
 
-interface PostParams {
-    slug: string;
-    title: string;
-    date: Date;
-}
-
-function getPostsFromDirectory(directory: string): PostParams[] {
-    const filenames = fs.readdirSync(directory).filter((filename) => {
-        const filePath = path.join(directory, filename);
-        return fs.statSync(filePath).isFile();
-    });
-
-    return filenames.map((filename) => {
-        const filePath = path.join(directory, filename);
-        const fileContent = fs.readFileSync(filePath, "utf8");
-        const { data } = matter(fileContent);
-
-        return {
-            slug: filename.replace(/\.md$/, ""),
-            title: data.title || "No title",
-            date: data.date ? new Date(data.date) : new Date(0),
-        };
-    });
-}
-
-function getRegularPosts(): PostParams[] {
+export default function Blog() {
     const postsDirectory = path.join(process.cwd(), "public/blog-posts");
-    return getPostsFromDirectory(postsDirectory);
-}
-
-function getPinnedPosts(): PostParams[] {
     const pinnedDirectory = path.join(
         process.cwd(),
         "public/blog-posts/pinned",
     );
-    return getPostsFromDirectory(pinnedDirectory);
-}
 
-export default function Blog() {
-    const pinnedPosts = getPinnedPosts();
-    const regularPosts = getRegularPosts();
+    const regularPosts = getPostsFromDirectory(postsDirectory);
+    const pinnedPosts = getPostsFromDirectory(pinnedDirectory);
 
     return (
         <>

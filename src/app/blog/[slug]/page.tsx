@@ -6,10 +6,20 @@ import path from "path";
 import markdownit from "markdown-it";
 import { convertDateToString } from "@/lib/utils";
 import "@/styles/markdown.css";
+import { getPostsFromDirectory } from "@/lib/blogPosts";
 
 export const dynamicParams = false;
 
 const md = markdownit();
+
+export function generateStaticParams() {
+    const postsDirectory = path.join(process.cwd(), "public/blog-posts");
+    const pinnedDirectory = path.join(postsDirectory, "pinned");
+    return [
+        ...getPostsFromDirectory(postsDirectory),
+        ...getPostsFromDirectory(pinnedDirectory),
+    ];
+}
 
 export default function Page({ params }: { params: { slug: string } }) {
     const { slug } = params;
