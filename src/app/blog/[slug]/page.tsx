@@ -1,9 +1,9 @@
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Link from "next/link";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import markdownit from "markdown-it";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { convertDateToString } from "@/lib/utils";
 import "@/styles/markdown.css";
 
@@ -11,27 +11,27 @@ export const dynamicParams = false;
 
 const md = markdownit();
 
-export function generateStaticParams() {
-    const postsDirectory = path.join(process.cwd(), "public/blog-posts");
-    const filenames = fs.readdirSync(postsDirectory);
-
-    return filenames.map((filename) => {
-        const filePath = path.join(postsDirectory, filename);
-        const fileContent = fs.readFileSync(filePath, "utf8");
-        const { data } = matter(fileContent);
-
-        return {
-            slug: filename.replace(/\.md$/, ""),
-            title: data.title || "No title",
-            date: data.date ? new Date(data.date) : new Date(0),
-        };
-    });
-}
-
 export default function Page({ params }: { params: { slug: string } }) {
     const { slug } = params;
     const postsDirectory = path.join(process.cwd(), "public/blog-posts");
-    const filePath = path.join(postsDirectory, `${slug}.md`);
+    const pinnedDirectory = path.join(postsDirectory, "pinned");
+
+    // Function to locate the file in the appropriate directory
+    function findPostFilePath(slug: string): string | null {
+        const filePath = path.join(postsDirectory, `${slug}.md`);
+        if (fs.existsSync(filePath)) {
+            return filePath;
+        }
+
+        const pinnedFilePath = path.join(pinnedDirectory, `${slug}.md`);
+        return fs.existsSync(pinnedFilePath) ? pinnedFilePath : null;
+    }
+
+    const filePath = findPostFilePath(slug);
+    if (!filePath) {
+        return <div>Post not found</div>; // Handle not found case
+    }
+
     const fileContent = fs.readFileSync(filePath, "utf8");
     const { content, data } = matter(fileContent);
 
