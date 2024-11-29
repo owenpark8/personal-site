@@ -1,6 +1,6 @@
 ---
 title: "EECS 373 All-Nighter"
-date: 2024-06-01 00:00
+date: 2024-06-10 00:00
 ---
 
 EECS 373: Introduction to Embedded System Design is a class at the University of Michigan that is
