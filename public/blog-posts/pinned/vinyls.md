@@ -1,6 +1,6 @@
 ---
 title: "Vinyl Collection"
-date: 2024-11-08 15:35
+date: 2024-11-29 15:00
 ---
 
 | Name                            | Artist                | Date Purchased    | Barcode      | Notes                                     |
@@ -24,3 +24,5 @@ date: 2024-11-08 15:35
 | Birds In The Trap Sing McKnight | Travis Scott          | November 10, 2024 | 889853777112 |                                           |
 | ASTROWORLD                      | Travis Scott          | November 10, 2024 | 190758883618 |                                           |
 | UTOPIA                          | Travis Scott          | November 10, 2024 | 196588150418 |                                           |
+| GNX                             | Kendrick Lamar        | November 27, 2024 |              | White                                     |
+| 2014 Forest Hills Drive         | J. Cole               | November 29, 2024 |              | 10 Year Anniversary                       |
