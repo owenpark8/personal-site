@@ -1,6 +1,6 @@
 ---
 title: "japan"
-date: 2025-01-01 23:52
+date: 2025-01-11 23:52
 ---
 
 Went to Japan over this winter break. It was fun :)
