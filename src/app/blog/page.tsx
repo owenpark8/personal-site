@@ -11,7 +11,9 @@ export default function Blog() {
         "public/blog-posts/pinned",
     );
 
-    const regularPosts = getPostsFromDirectory(postsDirectory);
+    const regularPosts = getPostsFromDirectory(postsDirectory).sort(
+        (a, b) => b.date.getTime() - a.date.getTime(),
+    );
     const pinnedPosts = getPostsFromDirectory(pinnedDirectory);
 
     return (
