@@ -25,4 +25,5 @@ date: 2024-11-29 15:00
 | ASTROWORLD                      | Travis Scott          | November 10, 2024 | 190758883618 |                                           |
 | UTOPIA                          | Travis Scott          | November 10, 2024 | 196588150418 |                                           |
 | GNX                             | Kendrick Lamar        | November 27, 2024 |              | White                                     |
-| 2014 Forest Hills Drive         | J. Cole               | November 29, 2024 |              | 10 Year Anniversary                       |
+| 2014 Forest Hills Drive         | J. Cole               | November 29, 2024 | 602475271086 | 10 Year Anniversary                       |
+| Balloonerism                    | Mac Miller            | January 19, 2024  | 093624847106 | Clear                                     |
