@@ -147,6 +147,25 @@ export default function Home() {
                         Projects
                     </h1>
                     <ProjectDisplay
+                        imageSrc="/project-previews/473-preview.webp"
+                        title="ChordSync: A Smart Self-Teaching Guitar"
+                        summary="The ChordSync project is a smart electric guitar designed to enhance learning and interactivity for beginners. It integrates six LCD neck displays to guide finger placement and provides real-time audio feedback. The system uses an STM32H5 microcontroller for display control, a Raspberry Pi for audio-to-MIDI conversion, and custom PCBs for integration. Two learning modes are featured: Chord Mode for immediate chord feedback and Song Mode for analyzing full songs post-performance. The web interface is a server built using cpp-httplib and SQLite, running on the Raspberry Pi to deliver htmx-powered dynamic content to the user."
+                        tags={[
+                            "C",
+                            "C++",
+                            "STM32",
+                            "Embedded Linux",
+                            "htmx",
+                            "Tailwind CSS",
+                            "SQLite",
+                            "pybind11",
+                            "PCB Design",
+                        ]}
+                        github="https://github.com/owenpark8/eecs473-ChordSync"
+                        miscLink="/EECS-473-ChordSync-Report.pdf"
+                        miscText="Read the report"
+                    />
+                    <ProjectDisplay
                         imageSrc="/project-previews/470-preview.webp"
                         title="R10K-Style Multithread Out-of-Order RISC-V Processor"
                         summary="A fully synthesizable R10K-style processor based on the RISC-V ISA in SystemVerilog with a 2-way superscalar architecture, simultaneous multithreading, and advanced features such as an 4-way associative cache, tournament branch predictor, and instruction prefetching. Achieved a clock period of 7.85ns and an average CPI of 1.05. Designed and implemented from scratch with a group of 4 other classmates as a part of EECS 470: Computer Architecture at the University of Michigan."
@@ -245,9 +264,7 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-                                        <p className="italic">
-                                            (Expected) M.S.E. in ECE
-                                        </p>
+                                        <p className="italic">M.S.E. in ECE</p>
                                         <p className="italic text-right">
                                             Jan. 2025 - Dec. 2025
                                         </p>
@@ -256,7 +273,7 @@ export default function Home() {
                                         <p className="italic">
                                             B.S.E. in Computer Engineering
                                         </p>
-                                        <p className="italic text-right">
+                                        <p className="text-right">
                                             Aug. 2022 - Dec. 2024
                                         </p>
                                     </div>
@@ -265,17 +282,18 @@ export default function Home() {
                                             <span className="font-bold">
                                                 GPA:
                                             </span>{" "}
-                                            3.92 / 4.0
+                                            3.90 / 4.0
                                         </li>
                                         <li>
                                             <span className="font-bold">
                                                 Coursework:
                                             </span>
                                             Computer Architecture, Operating
-                                            Systems, Embedded Systems, Applied
-                                            GPU Parallel Programming, Data
-                                            Structures and Algorithms, Wireless
-                                            Systems, Signals and Systems
+                                            Systems, Advanced Embedded Systems,
+                                            Applied GPU Parallel Programming,
+                                            Data Structures and Algorithms,
+                                            Wireless Systems, Signals and
+                                            Systems
                                         </li>
                                     </ul>
                                 </div>
@@ -345,6 +363,14 @@ export default function Home() {
                                             recruitment and onboarding, and
                                             educating new members
                                         </li>
+                                        <li>
+                                            Rearchitecting the ROS2 motor
+                                            control subsystem with modular
+                                            brushed and brushless libraries,
+                                            enabling extensibility and
+                                            optimizing performance through
+                                            template-based configurations
+                                        </li>
                                     </BulletPointList>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                                         <p className="italic">
@@ -370,13 +396,6 @@ export default function Home() {
                                             integrating netlink sockets for CAN
                                             interface activation
                                         </li>
-                                        <li>
-                                            Leveraged multithreading to
-                                            concurrently read from ROS topics
-                                            and communicate with the CAN bus,
-                                            enhancing real-time data exchange
-                                            efficiency
-                                        </li>
                                     </BulletPointList>
                                 </div>
                                 <div id="resume-eecs370">
@@ -390,8 +409,8 @@ export default function Home() {
                                     </div>
                                     <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
                                         <p className="italic">
-                                            Teaching Assistant for EECS 370:
-                                            Introduction to Computer
+                                            Graduate Student Instructor for EECS
+                                            370: Introduction to Computer
                                             Organization
                                         </p>
                                         <p className="text-right">
@@ -494,7 +513,7 @@ export default function Home() {
                                         C, C++, &#123;System&#125;Verilog,
                                         &#123;RISC-V/ARMv7-M&#125; Assembly,
                                         Python, Java,
-                                        &#123;Java/Type&#125;Script, Bash
+                                        &#123;Java/Type&#125;Script, CUDA C
                                     </li>
                                     <li>
                                         <span className="font-bold">
