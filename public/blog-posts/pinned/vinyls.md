@@ -26,4 +26,7 @@ date: 2024-11-29 15:00
 | UTOPIA                          | Travis Scott          | November 10, 2024 | 196588150418 |                                           |
 | GNX                             | Kendrick Lamar        | November 27, 2024 | 602475686750 | White                                     |
 | 2014 Forest Hills Drive         | J. Cole               | November 29, 2024 | 602475271086 | 10 Year Anniversary                       |
-| Balloonerism                    | Mac Miller            | January 19, 2024  | 093624847106 | Clear                                     |
+| Weezer (Blue Album)             | Weezer                | December 25, 2024 | 602547945396 |                                           |
+| Balloonerism                    | Mac Miller            | January 19, 2025  | 093624847106 | Clear                                     |
+| GUTS (spilled)                  | Olivia Rodrigo        | February 13, 2025 | 602468098232 | Marbled                                   |
+| Casi Cuela | Neleonard | March 3, 2025 | 8428846403397 | 45 |
