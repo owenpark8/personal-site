@@ -80,6 +80,7 @@ export default function Home() {
                                 </Link>
                             </li>
                         </ul>
+                        {/*
                         <div className="flex items-center mt-2">
                             <Link
                                 href="#projects"
@@ -127,7 +128,6 @@ export default function Home() {
                                     </DropdownMenuGroup>
                                 </DropdownMenuContent>
                             </DropdownMenu>
-                            {/*
               <Link
                 href="/blog"
                 className={buttonVariants({
@@ -138,10 +138,11 @@ export default function Home() {
               >
                 Blog
               </Link>
-              */}
                         </div>
+              */}
                     </div>
                 </section>
+                {/*
                 <section id="projects" className="min-h-[90vh]">
                     <h1 className="pt-12 text-center scroll-m-20 text-4xl font-extrabold tracking-tight border-b pb-2 lg:text-5xl">
                         Projects
@@ -569,120 +570,8 @@ export default function Home() {
                         <ArrowDownToLine className="h-4 w-4 ml-2" />
                     </Link>
                 </section>
+                */}
             </MaxWidthWrapper>
         </>
     );
-}
-
-{
-    /*
-<div id="resume-mwig">
-  <div className="flex flex-row justify-between w-full items-baseline">
-    <h4 className="text-sm sm:text-base leading-5 font-bold">
-      Michigan Women Investment Group Website
-      <span className="italic font-normal">
-        {" "}
-        - Front End -{" "}
-      </span>
-      <a
-        href="https://michiganwig.com"
-        target="_blank"
-        className="font-normal text-blue-600 underline hover:text-blue-500"
-      >
-        michiganwig.com
-      </a>
-    </h4>
-    <p className="text-xs sm:text-sm text-right">Sept. 2023</p>
-  </div>
-  <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
-    <li>
-      Designed and deployed a responsive single-page site for
-      the MWIG organization using vanilla JavaScript, HTML, and
-      CSS, ensuring a seamless user experience across all
-      devices
-    </li>
-  </ul>
-</div>
-
-
-<div id="resume-research" className="mt-1">
-    <div className="flex flex-row justify-between w-full items-baseline">
-        <h4 className="text-sm sm:text-base leading-5 font-bold">
-            University of Michigan CSE Department
-        </h4>
-        <p className="text-xs sm:text-sm font-bold">
-            Ann Arbor, MI
-        </p>
-    </div>
-    <div className="text-xs sm:text-sm flex flex-row justify-between w-full">
-        <p className="italic">Undergraduate Researcher</p>
-        <p className="text-right">
-            Fall 2023 - <span className="italic">Present</span>
-        </p>
-    </div>
-    <BulletPointList>
-        <li>
-            Researching how large language models can be used to
-            generate infrastructure as code configuration files for
-            Terraform from natural language descriptions to present at
-            the International Conference on Machine Learning
-        </li>
-        <li>
-            Building a comprehensive dataset of over 1,000 different
-            prompts, policies, and target configurations of Terraform
-            AWS resources
-        </li>
-        <li>
-            Leveraging machine learning techniques to achieve a
-            significant reduction in error rates and up to a 20%
-            improvement in code synthesis accuracy during preliminary
-            testing
-        </li>
-    </BulletPointList>
-</div>
-
-
-<div id="resume-podium-prints">
-    <div className="flex flex-row justify-between w-full items-baseline">
-        <h4 className="text-sm sm:text-base leading-5 font-bold">
-            Podium Prints Ecommerce Website
-            <span className="italic font-normal">
-                {" "}
-                - Full-Stack -{" "}
-            </span>
-            <Link
-                href="https://podium-prints.com"
-                target="_blank"
-                className="font-normal text-blue-600 underline hover:text-blue-500"
-            >
-                podium-prints.com
-            </Link>
-        </h4>
-        <p className="text-xs sm:text-sm text-right">Fall 2023</p>
-    </div>
-    <ul className="text-xs sm:text-sm list-disc ml-4 sm:ml-6">
-        <li>
-            Developed a full-stack ecommerce web app in TypeScript
-            with a Next.js frontend and an Express backend,
-            integrating Payload CMS to easily access a MongoDB
-            database and AWS S3 bucket
-        </li>
-        <li>
-            Managed API endpoints using tRPC, ensuring a type-safe
-            backend that seamlessly integrated with the frontend
-        </li>
-        <li>
-            Leveraged the Stripe API and webhooks to handle secure and
-            efficient payment processing
-        </li>
-        <li>
-            Used Docker Compose, Terraform, and LocalStack to create
-            an instant development environment with a mock S3 server
-            and local MongoDB database
-        </li>
-    </ul>
-</div>
-
-
-*/
 }
